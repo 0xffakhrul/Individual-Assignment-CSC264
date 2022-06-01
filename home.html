@@ -1,77 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
-    <div class="welcome-h">
-        <h1>I'm Fakhrul Radzi</h1>
-        <p>CS110 students. This my personal website, used for sharing my writings and random articles, all written by me.</p>
-        <button onclick="location.href = 'forms.html';">Subscribe to my blog and never miss my upcoming articles!</button>
-    </div>
-    <hr>
 
-    <div class="card-grid">
-        <div class="card card-shadow">
-          <div class="card-header card-image">
-            <img src="https://source.unsplash.com/178j8tJrNlc" />
-          </div>
-          <div class="card-header">
-              <b>Yo Mom</b>
-          </div>
-          <div class="card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita nulla nobis cumque quisquam. Enim perspiciatis vero laudantium nemo cum!
-          </div>
-          <div class="card-footer">
-            <button class="btn">Details</button>
-          </div>
-        </div>
-        <div class="card card-shadow">
-          <div class="card-header card-image">
-            <img src="https://source.unsplash.com/eWqOgJ-lfiI" />
-          </div>
-          <div class="card-header">
-            <b>Yo Mom</b>
-          </div>
-          <div class="card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita nulla nobis cumque quisquam. Enim perspiciatis vero laudantium nemo cum!
-          </div>
-          <div class="card-footer">
-            <button class="btn">Details</button>
-          </div>
-        </div>
-        <div class="card card-shadow">
-          <div class="card-header card-image">
-            <img src="https://source.unsplash.com/eWqOgJ-lfiI" />
-          </div>
-          <div class="card-header">
-            <b>Yo Mom</b>
-          </div>
-          <div class="card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita nulla nobis cumque quisquam. Enim perspiciatis vero laudantium nemo cum!
-          </div>
-          <div class="card-footer">
-            <button class="btn">Details</button>
-          </div>
-        </div>
-        <div class="card card-shadow">
-          <div class="card-header card-image">
-            <img src="https://source.unsplash.com/eWqOgJ-lfiI" />
-          </div>
-          <div class="card-header">
-            <b>Yo Mom</b>
-          </div>
-          <div class="card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita nulla nobis cumque quisquam. Enim perspiciatis vero laudantium nemo cum!
-          </div>
-          <div class="card-footer">
-            <button class="btn">Details</button>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Blog</title>
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+</head>
+
+<body>
+
+  <header id="welcome">
+    <nav class="navbar">
+      <div class="container">
+        <!-- <a href = "index.html" class = "navbar-brand">Yo Mom</a> -->
+        <div class="navbar-nav">
+          <a href="#welcome">home</a>
+          <a href="#articles">articles</a>
+          <a href="#works">works</a>
         </div>
       </div>
+    </nav>
+    <div class="banner">
+      <div class="container">
+        <h1 class="banner-title">
+          <span>Hi, </span>I'm Fakhrul Radzi
+        </h1>
+        <p class="welcome-sub">A student with a passion in programming.</p>
+        <button class="btn-sub" onclick="location.href = 'forms.html';">Subscribe here!</button> <br>
+        <a href="contact.html">Contact Me</a>
+        
+      </div>
+    </div>
+  </header>
+
+  <section class="intro" id="intro">
+    <div class="container">
+      <h3>Thank you for visiting! 👋</h3>
+      <p>I am a student of <b>Diploma in Science Computer</b>. Very interested in web development and new technologies. <br>
+         I always loved to learn <b>new things</b> and apply it in my projects.
+      </p> <br>
+      <p>Anyway, are you stressed? Research finds that stress can be reduced by watching or listening to ASMR. <a href="video.html">Try it here!</a> </p>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="card-title" align="center">Skills</h2>
+    <div class="skills-con">
+      <div class="panel">
+
+        <div class="skills-plan">
+            <h2 class="skills-header">Front-End</h2>
+            <ol class="skills-features">
+                <li class="skills-features-item">HTML/CSS</li>
+                <li class="skills-features-item">JavaScript, jQuery</li>
+            </ol>
+        </div>
+        <div class="skills-plan">
+            <h2 class="skills-header">Back-End</h2>
+            <ol class="skills-features">
+                <li class="skills-features-item">PHP</li>
+                <li class="skills-features-item">MySQL</li>
+            </ol>
+        </div>
+        <div class="skills-plan">
+            <h2 class="skills-header">Others</h2>
+            <ol class="skills-features">
+                <li class="skills-features-item">Java</li>
+                <li class="skills-features-item">C++</li>
+            </ol>
+        </div>
+
+    </div>
+    </div>
+  </section>
+
+  <section class="articles" id="articles">
+    <h2 class="card-title" align="center">Latest <span>Art</span>icles</h2>
+    <div class="card-grid">
+      <div class="card card-shadow">
+        <div class="card-header card-image">
+          <img src="https://c.tenor.com/cBmz8RTK_JsAAAAC/typing-anime.gif" />
+        </div>
+        <div class="card-header">
+          <b>Programming Language trend</b>
+        </div>
+        <div class="card-body">
+          Programming language is a computer language that is used by the developers...
+        </div>
+        <div class="card-footer">
+          <button class="btn" onclick="location.href = 'https://fxkhrulradzi.hashnode.dev/';">Details</button>
+        </div>
+      </div>
+      <div class="card card-shadow">
+        <div class="card-header card-image">
+          <img src="https://source.unsplash.com/w7ZyuGYNpRQ" />
+        </div>
+        <div class="card-header">
+          <b>Framework</b>
+        </div>
+        <div class="card-body">
+          I've been learning a lot about framework, since I'm the front-end developer for my group project...
+        </div>
+        <div class="card-footer">
+          <button class="btn" onclick="location.href = 'https://fxkhrulradzi.hashnode.dev/';">Details</button>
+        </div>
+      </div>
+      
+    </div>
+    <button class="blog" onclick="location.href = 'https://fxkhrulradzi.hashnode.dev/';">Visit my blog</button>
+    </div>
+  </section>
+
+  <section class="works" id="works">
+    <!-- My Works -->
+    <h2 class="card-title" align="center"> <span>My</span> Works</h2>
+    <div class="card-grid">
+      <div class="card card-shadow">
+        <div class="card-header card-image">
+          <img src="https://source.unsplash.com/gb0BZGae1Nk" />
+        </div>
+        <div class="card-header">
+          <b>Student Activity Report System (PERMATA)</b>
+        </div>
+        <div class="card-body">
+          System created for students in UiTM Raub to propose their club's activity to Students Affairs Division (HEP).
+        </div>
+        <div class="card-footer">
+          <button class="btn" onclick="location.href = 'https://github.com/FakhrulRadziCode';">Details</button>
+        </div>
+      </div>
+      <div class="card card-shadow">
+        <div class="card-header card-image">
+          <img src="https://source.unsplash.com/pgSkeh0yl8o" />
+        </div>
+        <div class="card-header">
+          <b>Portfolio Website</b>
+        </div>
+        <div class="card-body">
+          My own personal website, used to showcase my works as a portfolio.
+        </div>
+        <div class="card-footer">
+          <button class="btn" onclick="location.href = 'https://github.com/FakhrulRadziCode';">Details</button>
+          <button class="btn-outline" onclick="location.href = 'https://fakhrulradzicode.github.io/Portfolio-Website/';">Live demo</button>
+        </div>
+      </div>
+      <div class="card card-shadow">
+        <div class="card-header card-image">
+          <img src="https://source.unsplash.com/J4kK8b9Fgj8" />
+        </div>
+        <div class="card-header">
+          <b>Story Time</b>
+        </div>
+        <div class="card-body">
+          I created a simple book interface using HTML and CSS.
+        </div>
+        <div class="card-footer">
+          <button class="btn" onclick="location.href = 'https://github.com/FakhrulRadziCode';">Details</button>
+        </div>
+      </div>
+      <div class="card card-shadow">
+        <div class="card-header card-image">
+          <img src="https://source.unsplash.com/h2aDKwigQeA" />
+        </div>
+        <div class="card-header">
+          <b>Calculator</b>
+        </div>
+        <div class="card-body">
+          I hecking love calculator so I create a calculator using HTML, CSS & JS, also using a VB.Net.
+        </div>
+        <div class="card-footer">
+          <button class="btn" onclick="location.href = 'https://github.com/FakhrulRadziCode';">Details</button>
+        </div>
+      </div>
+    </div>
+    <button class="blog" onclick="location.href = 'https://github.com/FakhrulRadziCode';">Visit my Github</button>
+    </div>
+  </section>
+
+  <table>
+      <h2 align="center">Software I used for development</h2>
+        <tr bgcolor="grey">
+          <th width="100" >#</th>
+          <th width="300">Name</th>
+          <th width="100">Version</th>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+          <td>1</td>
+          <td>VS Code</td>
+          <td>v1.67</td>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+          <td>2</td>
+          <td>Brave Browser</td>
+          <td>v1.39.111</td>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+          <td>3</td>
+          <td>Figma</td>
+          <td>-</td>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+          <td>4</td>
+          <td>BlueJ</td>
+          <td>-</td>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+          <td>5</td>
+          <td>Dev C++</td>
+          <td>v9.2.0</td>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+          <td>6</td>
+          <td>Haikei</td>
+          <td>-</td>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+          <td>7</td>
+          <td>Draw.io</td>
+          <td>-</td>
+        </tr>
+    </table>
+  <script src="assets/scrollreveal.min.js"></script>
+  <script src="assets/main.js"></script>
+
 </body>
+
 </html>
